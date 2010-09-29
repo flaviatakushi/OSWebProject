@@ -1,0 +1,138 @@
+﻿div, p, ul, h1, h2, h3, h4
+{
+	padding:0; margin:0;
+}
+ul
+    {
+	list-style-type:none;
+    }
+body
+{
+    background-image: url('../Img/background.gif');
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-repeat: repeat;
+}
+
+.all
+{
+    margin: 5px 112px 10px 112px;
+}
+
+.body
+{
+    background-color: #FFFFFF;
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+.top
+{
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    width:800px;
+    height:100px;
+    
+}
+.border-bottom
+{
+    margin: 0 auto 10px auto;
+    height: 13px;
+    width: 800px;
+    background-image: url('../Img/brd_baixo.gif');
+    clear: both;
+}
+.banner
+{
+    background-image: url('../Img/banner.jpg');
+    width:800px;
+    height:150px;
+    display:block;
+}
+.content
+{
+    padding-top:15px;
+    width: 800px;
+    float: left;
+    height: 100%;
+    background: #FFFFFF;
+    display: block;
+}
+.content form
+{
+    padding: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #3F5567;
+    font-weight: 300;
+}
+.content form input
+{
+    padding: 1px;
+    border: 1px solid #b5b5b5;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    height: 18px;
+    color: #797979;
+    font-weight:bold;
+}
+.menu
+{
+    background-color: #ffffff;
+    background-image: url('../Img/bg_menu.gif');
+    background-repeat: repeat-x;
+    width: 800px;
+    height: 50px;
+    position: relative;
+    float: left;
+    display: block;
+}
+.menu ul li
+{
+    float: left;
+    padding: 0 3px 0 3px;
+    width: auto;
+    margin: 1px 5px 0 1px;
+    font-family: arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    display: block;
+    height: 43px;
+    width: auto;
+    cursor: pointer;
+    float: left;
+    padding: 6px 3px 3px 3px;
+    margin: 3px 1px 3px 1px;
+    text-align: center;
+    color: #333333;
+}
+
+.eita:hover
+{
+    width: auto;
+    height: 44px;
+    display: block;
+    background-position: top;
+    background-image: url('../Img/bg_button.gif');
+    background-repeat: repeat-x;
+    margin: 3px 2px 3px 2px;
+}
+.
+.button
+{
+    position:relative;
+    width: auto;
+    height: 44px;
+    display: block;
+    margin: 3px 2px 3px 2px;
+}
+.button span.hover
+{
+    width: auto;
+    height: 44px;
+    display: block;
+    background-image: url('../Img/bg_button.gif');
+    background-repeat: repeat-x;
+    margin: 3px 2px 3px 2px;
+}
