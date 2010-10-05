@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="OSWebSite.MasterPage2" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Ordem de Serviço</title>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/Estilo.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.4.2.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="all">
+    <form id="Form1" runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>
+        <div class="top">
+            <div class="banner">
+            </div>
+            <div class="menu">
+            </div>
+            
+        </div>
+        <div class="body">
+            <asp:ContentPlaceHolder  runat="server" id="MainContent2"></asp:ContentPlaceHolder>
+        </div>
+        <div class="border-bottom"></div>
+        </form>
+    </div>
+</body>
+</html>

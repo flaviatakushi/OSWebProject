@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home" url="~/Home.aspx" >
+        <siteMapNode title="Cadastro"  description="">
+          <siteMapNode url="~/CadastroUsuario.aspx" title="Cadastrar Usuário"  description=""/>
+          <siteMapNode url="~/CadastroCliente.aspx" title="Cadastrar Cliente"  description=""/>
+          <siteMapNode url="~/CadastroDeptoTecnico.aspx" title="Cadastrar Depto.Técnico"  description=""/>
+        </siteMapNode>
+  <siteMapNode title="Ordem de Serviço"  description="">
+    <siteMapNode url="~/CadastrarOs.aspx" title="Abrir Ordem de Serviço"  description=""/>
+    <siteMapNode url="~/ConsultaOs.aspx" title="Consultar Ordens de Serviço"  description=""/>
+  </siteMapNode>
+  <siteMapNode title="Usuários"  description="" >
+    <siteMapNode url="~/ConsultaUsuario.aspx" title="Consulta de Usuário"  description=""/>
+  </siteMapNode>
+  <siteMapNode title="Minhas Tarefas"  description="" url="~/MinhasTarefas.aspx"/>
+  </siteMapNode>
+</siteMap>
+

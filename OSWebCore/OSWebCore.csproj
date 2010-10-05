@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDDBA2BD-E7AF-4553-8EE9-66930831689B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OSWebCore</RootNamespace>
+    <AssemblyName>OSWebCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLayer\LoginBll.cs" />
+    <Compile Include="BusinessLayer\UsuarioBll.cs" />
+    <Compile Include="BusinessLayer\PessoaBll.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Cliente.cs" />
+    <Compile Include="Entities\Contato.cs" />
+    <Compile Include="Entities\ContatoTipo.cs" />
+    <Compile Include="Entities\DeptoTecnico.cs" />
+    <Compile Include="Entities\Endereco.cs" />
+    <Compile Include="Entities\Grupo.cs" />
+    <Compile Include="Entities\GrupoPermissao.cs" />
+    <Compile Include="Entities\GrupoTipo.cs" />
+    <Compile Include="Entities\Pedido.cs" />
+    <Compile Include="Entities\PedidoStatus.cs" />
+    <Compile Include="Entities\PedidoTipo.cs" />
+    <Compile Include="Entities\Permissao.cs" />
+    <Compile Include="Entities\PessoaTipo.cs" />
+    <Compile Include="Entities\Usuario.cs" />
+    <Compile Include="Entities\Pessoa.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="ObjectModel\Attributes\EntityPropertyAttribute.cs" />
+    <Compile Include="Utils\ReadOnlyDictionary.cs" />
+    <Compile Include="BusinessLayer\BaseBusinessLayer.cs" />
+    <Compile Include="DataAccessLayer\DataAccess.cs" />
+    <Compile Include="DataAccessLayer\DataAccessBuilder.cs" />
+    <Compile Include="ObjectModel\RulableObject.cs" />
+    <Compile Include="ObjectModel\Rules\BaseRule.cs" />
+    <Compile Include="ObjectModel\Rules\RegexRule.cs" />
+    <Compile Include="ObjectModel\Rules\SimpleRule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\Extensions.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

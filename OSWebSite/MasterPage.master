@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="OSWebSite.MasterPage" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Ordem de Serviço</title>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/Estilo.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/script.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-1.4.2.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="all">
+    <form runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>
+        <div class="top">
+            <div class="banner">
+            </div>
+            <div class="menu">
+                <ul>
+                <asp:Menu runat="server" 
+                        RenderingMode="List" ID="Menu" StaticEnableDefaultPopOutImage="False" 
+                        StaticDisplayLevels="2" DataSourceID="SiteMapDataSource1" DynamicEnableDefaultPopOutImage="False" 
+                        Orientation="Horizontal" DynamicHorizontalOffset="2" >
+                    <DataBindings>
+                        <asp:MenuItemBinding DataMember="SiteMapNode" EnabledField="Title" 
+                            NavigateUrlField="Url" />
+                    </DataBindings>
+                    <DynamicHoverStyle ForeColor="#516CA0" Font-Bold="True"/> 
+                    <DynamicMenuItemStyle HorizontalPadding="2px"  Font-Size="Small" ForeColor="#666666" CssClass="menuItem2" Height="17px" />
+                    <DynamicMenuStyle HorizontalPadding="2px" BackColor="#e2e2e2" Width="200px" BorderStyle="Solid" BorderWidth="1px" BorderColor="#D1D8E0" />
+                    <DynamicItemTemplate>
+                        <%# Eval("Text") %>
+                    </DynamicItemTemplate>
+                    <StaticHoverStyle Font-Names="Helvetica, Arial, Verdana, sans-serif" ForeColor=" #FFFFFF" Font-Bold="True" Font-Size="Larger" BackColor="#516CA0"/>
+                    <StaticMenuItemStyle Font-Names="Helvetica, Arial, Verdana, sans-serif" ForeColor=" #333333" Font-Size="Larger" HorizontalPadding="10px" Font-Bold="True"/>
+                </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" 
+                        SiteMapProvider="webOS" />
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="body">
+            <asp:ContentPlaceHolder  runat="server" id="MainContent"></asp:ContentPlaceHolder>
+        </div>
+        <div class="border-bottom"></div>
+        </form>
+    </div>
+</body>
+</html>

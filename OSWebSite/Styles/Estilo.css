@@ -1,0 +1,249 @@
+﻿body
+{
+    background-image: url('../Img/background.gif');
+    font-family: Helvetica, Verdana, "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, sans-serif;
+    background-repeat: repeat;
+}
+div, p, ul, h1, h2, h3, h4
+{
+	padding:0; margin:0;
+}
+
+ul
+    {
+	list-style-type:none;
+    }
+p
+{
+    font-size: 10pt;
+}
+/* TITULOS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 16pt;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+}
+
+h1
+{
+    font-size: 20pt;
+    padding-bottom: 0px;
+    font-weight: 600;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* DIVS LAYOUT
+----------------------------------------------------------*/
+.all
+{
+    margin: 5px 112px 10px 112px;
+}
+
+.body
+{
+    background-color: #FFFFFF;
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+.top
+{
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    width:800px;
+    height:100px;
+    
+}
+.border-bottom
+{
+    margin: 0 auto 10px auto;
+    height: 13px;
+    width: 800px;
+    background-image: url('../Img/brd_baixo.gif');
+    clear: both;
+}
+.banner
+{
+    background-image: url('../Img/banner.png');
+    width:800px;
+    height:150px;
+    display:block;
+}
+/* DIVs DE CONTEUDO
+----------------------------------------------------------*/
+.content
+{
+    padding-top: 15px;
+    width: 800px;
+    float: left;
+    height: 100%;
+    background: #FFFFFF;
+    display: block;
+}
+.content div
+{
+    display: block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+/* MENU
+----------------------------------------------------------*/
+.menu
+{
+    background-position: center center;
+    background-color: #ffffff;
+    background-image: url('../Img/bg_menu.gif');
+    background-repeat: repeat-x;
+    width: 800px;
+    height: 30px;
+    position: relative;
+    float: left;
+    display: block;
+
+}
+.menu ul li
+{
+    float: left;
+    padding: 0 3px 0 3px;
+    width: auto;
+    margin: 0px 5px 0 1px;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    display: block;
+    height: 44px;
+    width: auto;
+    cursor: pointer;
+    float: left;
+    padding: 0px 3px 3px 3px;
+    margin: 0px 1px 0px 1px;
+    text-align: center;
+    color: #333333;
+}
+/* FORM CADASTROS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 3px;
+    border: 1px solid #BCBCBC;
+    font-family: Helvetica, "Segoe UI", Arial, Verdana, sans-serif;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.cadastro label, fieldset.trocarSenha label
+{
+    display: block;
+}
+
+fieldset.cadastro
+{
+   width: 98%; 
+}
+fieldset label.inline 
+{
+    display: inline;
+}
+
+input.inputTexto 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.inputSenha 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+.notificacaoErro
+{
+    font-size: 10pt;
+    color: Red;
+}
+.dropdownlist
+{
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.submitButton
+{
+    text-align: center;    
+}
+/* LOGIN
+----------------------------------------------------------*/
+.login fieldset
+{
+   width: 50%;
+}
+.login div
+{
+   text-align:center;
+}
+.login fieldset label
+{
+    display: block;
+    text-align:left;
+}
+.login .notificacaoErro
+{
+    font-size: 10pt;
+    color: Red;
+    text-align:center;
+}
+
+/* BOTOES
+----------------------------------------------------------*/
+.button
+{
+    border-style: none;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url('../Img/btn.gif');
+    font-weight: Bolder;
+    cursor: pointer;
+    width: 500px;
+    height: 40px;
+    font-size: 16pt;
+    color: #B0B0B0;
+    font-family: Arial, Verdana, sans-serif;
+}
+.button:hover
+{
+    background-image: url('../Img/btn_o.gif');
+    color: #FFF;
+}
