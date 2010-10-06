@@ -25,14 +25,14 @@ namespace OSWebCore
             if (descricao == null)
                 throw new ArgumentNullException("descricao");
 
-            var list = this.SelectData(CommandType.Text, "select * from tb_pedidotipo where descricao = '" + descricao + "'");
+            var list = this.SelectData(CommandType.Text, "select id_pedidotipo, descricao from tb_pedidotipo where descricao = '" + descricao + "'");
 
             return list.Count > 0 ? list[0] : null;
         }
 
         public Collection<PedidoTipo> SelectAll()
         {
-            return this.SelectData(CommandType.Text, "select * from tb_pedidotipo");
+            return this.SelectData(CommandType.Text, "select id_pedidotipo, descricao from tb_pedidotipo");
         }
 
         public override int InsertData(PedidoTipo entity)

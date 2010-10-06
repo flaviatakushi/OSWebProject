@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer\ClienteBL.cs" />
+    <Compile Include="BusinessLayer\GrupoBL.cs" />
+    <Compile Include="BusinessLayer\GrupoPermissaoBL.cs" />
+    <Compile Include="BusinessLayer\GrupoTipoBL.cs" />
     <Compile Include="BusinessLayer\PedidoStatusBL.cs" />
     <Compile Include="BusinessLayer\PedidoTipoBL.cs" />
     <Compile Include="BusinessLayer\PermissaoBL.cs" />

@@ -285,54 +285,6 @@
     <milliseconds>262</milliseconds>
     <violations />
   </sourcecode>
-  <project key="-2011339959">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
-  <sourcecode name="PedidoTipoBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>10/04/2010 15:55:30</timestamp>
-      <milliseconds>0</milliseconds>
-    </settings>
-    <timestamp>10/05/2010 23:45:32</timestamp>
-    <milliseconds>185</milliseconds>
-    <violations />
-  </sourcecode>
-  <sourcecode name="PessoaTipoBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>10/04/2010 15:55:30</timestamp>
-      <milliseconds>0</milliseconds>
-    </settings>
-    <timestamp>10/05/2010 23:24:40</timestamp>
-    <milliseconds>645</milliseconds>
-    <violations />
-  </sourcecode>
-  <sourcecode name="PessoaBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>10/04/2010 15:55:30</timestamp>
-      <milliseconds>0</milliseconds>
-    </settings>
-    <timestamp>10/05/2010 23:23:44</timestamp>
-    <milliseconds>840</milliseconds>
-    <violations />
-  </sourcecode>
-  <sourcecode name="PermissaoBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>10/04/2010 15:55:30</timestamp>
-      <milliseconds>0</milliseconds>
-    </settings>
-    <timestamp>10/05/2010 23:25:40</timestamp>
-    <milliseconds>786</milliseconds>
-    <violations />
-  </sourcecode>
-  <sourcecode name="UsuarioBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>10/04/2010 15:55:30</timestamp>
-      <milliseconds>0</milliseconds>
-    </settings>
-    <timestamp>10/05/2010 23:27:22</timestamp>
-    <milliseconds>138</milliseconds>
-    <violations />
-  </sourcecode>
   <sourcecode name="GlobalSuppressions.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>10/04/2010 15:55:30</timestamp>
@@ -358,6 +310,90 @@
     </settings>
     <timestamp>10/05/2010 22:50:57</timestamp>
     <milliseconds>105</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="-2011339959">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="GrupoTipoBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>10/04/2010 15:55:30</timestamp>
+      <milliseconds>0</milliseconds>
+    </settings>
+    <timestamp>10/06/2010 01:14:57</timestamp>
+    <milliseconds>912</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="GrupoPermissaoBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>10/04/2010 15:55:30</timestamp>
+      <milliseconds>0</milliseconds>
+    </settings>
+    <timestamp>10/06/2010 00:58:49</timestamp>
+    <milliseconds>360</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="PedidoStatusBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>10/04/2010 15:55:30</timestamp>
+      <milliseconds>0</milliseconds>
+    </settings>
+    <timestamp>10/05/2010 23:54:49</timestamp>
+    <milliseconds>312</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="GrupoBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>10/04/2010 15:55:30</timestamp>
+      <milliseconds>0</milliseconds>
+    </settings>
+    <timestamp>10/06/2010 01:14:17</timestamp>
+    <milliseconds>453</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="PedidoTipoBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>10/04/2010 15:55:30</timestamp>
+      <milliseconds>0</milliseconds>
+    </settings>
+    <timestamp>10/05/2010 23:52:25</timestamp>
+    <milliseconds>926</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="PermissaoBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>10/04/2010 15:55:30</timestamp>
+      <milliseconds>0</milliseconds>
+    </settings>
+    <timestamp>10/05/2010 23:52:03</timestamp>
+    <milliseconds>91</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="PessoaBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>10/04/2010 15:55:30</timestamp>
+      <milliseconds>0</milliseconds>
+    </settings>
+    <timestamp>10/05/2010 23:55:47</timestamp>
+    <milliseconds>699</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="PessoaTipoBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>10/04/2010 15:55:30</timestamp>
+      <milliseconds>0</milliseconds>
+    </settings>
+    <timestamp>10/05/2010 23:55:55</timestamp>
+    <milliseconds>143</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="UsuarioBL.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>10/04/2010 15:55:30</timestamp>
+      <milliseconds>0</milliseconds>
+    </settings>
+    <timestamp>10/05/2010 23:56:47</timestamp>
+    <milliseconds>287</milliseconds>
     <violations />
   </sourcecode>
 </stylecopresultscache>

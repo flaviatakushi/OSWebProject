@@ -5,37 +5,42 @@ using System.Globalization;
 
 namespace OSWebCore
 {
-    public class PedidoStatusBL : BaseBusinessLayer<PedidoStatus>
+    public class GrupoBL : BaseBusinessLayer<Grupo>
     {
-        public PedidoStatusBL(string strConnection)
+        public GrupoBL(string strConnection)
             : base(DataProvider.SqlServer, strConnection)
         {
             ////
         }
 
-        public PedidoStatus SelectById(long id)
+        public Grupo SelectById(long idGrupo)
         {
-            var list = this.SelectData(CommandType.Text, "select id_pedidostatus, descricao from tb_pedidostatus where id_permissao = " + id);
+            var list = this.SelectData(CommandType.Text, "select id_grupo, descricao, id_grupotipo from tb_grupo where id_grupo = " + idGrupo);
 
             return list.Count > 0 ? list[0] : null;
         }
 
-        public PedidoStatus SelectByDescricao(string descricao)
+        public Grupo SelectByDescricao(string descricao)
         {
             if (descricao == null)
                 throw new ArgumentNullException("descricao");
 
-            var list = this.SelectData(CommandType.Text, "select id_pedidostatus, descricao from tb_pedidostatus where descricao = '" + descricao + "'");
+            var list = this.SelectData(CommandType.Text, "select id_grupo, descricao, id_grupotipo from tb_grupo where descricao like '" + descricao + "%'");
 
             return list.Count > 0 ? list[0] : null;
         }
 
-        public Collection<PedidoStatus> SelectAll()
+        public Collection<Grupo> SelectAll()
         {
-            return this.SelectData(CommandType.Text, "select id_pedidostatus, descricao from tb_pedidostatus");
+            return this.SelectData(CommandType.Text, "select id_grupo, descricao, id_grupotipo from tb_grupo");
         }
 
-        public override int InsertData(PedidoStatus entity)
+        public Collection<Grupo> SelectAllByTipo(long idGrupoTipo)
+        {
+            return this.SelectData(CommandType.Text, "select id_grupo, descricao, id_grupotipo from tb_grupo where id_grupotipo = " + idGrupoTipo);
+        }
+
+        public override int InsertData(Grupo entity)
         {
             if (entity == null)
                 throw new ArgumentNullException("entity");
@@ -48,8 +53,9 @@ namespace OSWebCore
                 this.DataAccess.BeginTransaction();
 
                 this.DataAccess.AddParameter("Descricao", DbType.String, entity.Descricao);
+                this.DataAccess.AddParameter("Id_GrupoTipo", DbType.Int64, entity.IdGrupoTipo);
 
-                result = this.DataAccess.ExecuteNonQuery(CommandType.StoredProcedure, "P_INS_PEDIDOSTATUS");
+                result = this.DataAccess.ExecuteNonQuery(CommandType.StoredProcedure, "P_INS_GRUPO");
 
                 this.DataAccess.CommitTransaction();
             }
@@ -66,12 +72,12 @@ namespace OSWebCore
             return result;
         }
 
-        public override int DeleteData(PedidoStatus entity)
+        public override int DeleteData(Grupo entity)
         {
             throw new NotImplementedException();
         }
 
-        public override int UpdateData(PedidoStatus entity)
+        public override int UpdateData(Grupo entity)
         {
             if (entity == null)
                 throw new ArgumentNullException("entity");
@@ -84,8 +90,9 @@ namespace OSWebCore
                 this.DataAccess.BeginTransaction();
 
                 this.DataAccess.AddParameter("Descricao", DbType.String, entity.Descricao);
+                this.DataAccess.AddParameter("Id_GrupoTipo", DbType.Int64, entity.IdGrupoTipo);
 
-                result = this.DataAccess.ExecuteNonQuery(CommandType.StoredProcedure, "P_UPD_PEDIDOSTATUS");
+                result = this.DataAccess.ExecuteNonQuery(CommandType.StoredProcedure, "P_UPD_GRUPO");
 
                 this.DataAccess.CommitTransaction();
             }
@@ -102,15 +109,16 @@ namespace OSWebCore
             return result;
         }
 
-        protected override PedidoStatus CreateEntity(IDataRecord record)
+        protected override Grupo CreateEntity(IDataRecord record)
         {
             if (record == null)
                 throw new ArgumentNullException("record");
 
-            return new PedidoStatus()
+            return new Grupo()
             {
-                IdPedidoStatus = record["Id_PedidoStatus"].ToLong(CultureInfo.InvariantCulture),
-                Descricao = record["Descricao"].ToString(CultureInfo.CurrentCulture),
+                IdGrupo = record["Id_Grupo"].ToLong(CultureInfo.InvariantCulture),
+                Descricao = record["Descricao"].ToString(CultureInfo.InvariantCulture),
+                IdGrupoTipo = record["Id_GrupoTipo"].ToLong(CultureInfo.InvariantCulture)
             };
         }
     }

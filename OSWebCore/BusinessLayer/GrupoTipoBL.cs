@@ -5,37 +5,37 @@ using System.Globalization;
 
 namespace OSWebCore
 {
-    public class PedidoStatusBL : BaseBusinessLayer<PedidoStatus>
+    public class GrupoTipoBL : BaseBusinessLayer<GrupoTipo>
     {
-        public PedidoStatusBL(string strConnection)
+        public GrupoTipoBL(string strConnection)
             : base(DataProvider.SqlServer, strConnection)
         {
             ////
         }
 
-        public PedidoStatus SelectById(long id)
+        public GrupoTipo SelectById(long id)
         {
-            var list = this.SelectData(CommandType.Text, "select id_pedidostatus, descricao from tb_pedidostatus where id_permissao = " + id);
+            var list = this.SelectData(CommandType.Text, "select id_grupotipo, descricao from tb_grupotipo where id_permissao = " + id);
 
             return list.Count > 0 ? list[0] : null;
         }
 
-        public PedidoStatus SelectByDescricao(string descricao)
+        public GrupoTipo SelectByDescricao(string descricao)
         {
             if (descricao == null)
                 throw new ArgumentNullException("descricao");
 
-            var list = this.SelectData(CommandType.Text, "select id_pedidostatus, descricao from tb_pedidostatus where descricao = '" + descricao + "'");
+            var list = this.SelectData(CommandType.Text, "select id_grupotipo, descricao from tb_grupotipo where descricao like '" + descricao + "%'");
 
             return list.Count > 0 ? list[0] : null;
         }
 
-        public Collection<PedidoStatus> SelectAll()
+        public Collection<GrupoTipo> SelectAll()
         {
-            return this.SelectData(CommandType.Text, "select id_pedidostatus, descricao from tb_pedidostatus");
+            return this.SelectData(CommandType.Text, "select id_grupotipo, descricao from tb_grupotipo");
         }
 
-        public override int InsertData(PedidoStatus entity)
+        public override int InsertData(GrupoTipo entity)
         {
             if (entity == null)
                 throw new ArgumentNullException("entity");
@@ -49,7 +49,7 @@ namespace OSWebCore
 
                 this.DataAccess.AddParameter("Descricao", DbType.String, entity.Descricao);
 
-                result = this.DataAccess.ExecuteNonQuery(CommandType.StoredProcedure, "P_INS_PEDIDOSTATUS");
+                result = this.DataAccess.ExecuteNonQuery(CommandType.StoredProcedure, "P_INS_GRUPOTIPO");
 
                 this.DataAccess.CommitTransaction();
             }
@@ -66,12 +66,12 @@ namespace OSWebCore
             return result;
         }
 
-        public override int DeleteData(PedidoStatus entity)
+        public override int DeleteData(GrupoTipo entity)
         {
             throw new NotImplementedException();
         }
 
-        public override int UpdateData(PedidoStatus entity)
+        public override int UpdateData(GrupoTipo entity)
         {
             if (entity == null)
                 throw new ArgumentNullException("entity");
@@ -85,7 +85,7 @@ namespace OSWebCore
 
                 this.DataAccess.AddParameter("Descricao", DbType.String, entity.Descricao);
 
-                result = this.DataAccess.ExecuteNonQuery(CommandType.StoredProcedure, "P_UPD_PEDIDOSTATUS");
+                result = this.DataAccess.ExecuteNonQuery(CommandType.StoredProcedure, "P_UPD_GRUPOTIPO");
 
                 this.DataAccess.CommitTransaction();
             }
@@ -102,14 +102,14 @@ namespace OSWebCore
             return result;
         }
 
-        protected override PedidoStatus CreateEntity(IDataRecord record)
+        protected override GrupoTipo CreateEntity(IDataRecord record)
         {
             if (record == null)
                 throw new ArgumentNullException("record");
 
-            return new PedidoStatus()
+            return new GrupoTipo()
             {
-                IdPedidoStatus = record["Id_PedidoStatus"].ToLong(CultureInfo.InvariantCulture),
+                IdGrupoTipo = record["Id_GrupoTipo"].ToLong(CultureInfo.InvariantCulture),
                 Descricao = record["Descricao"].ToString(CultureInfo.CurrentCulture),
             };
         }

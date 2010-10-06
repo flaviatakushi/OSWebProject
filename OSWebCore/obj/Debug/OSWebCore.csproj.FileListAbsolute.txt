@@ -30,5 +30,3 @@ C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\obj\Debug\GenerateRe
 C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\obj\Debug\OSWebCore.dll
 C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\obj\Debug\OSWebCore.pdb
-C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\bin\Debug\OSWebCore.dll.CodeAnalysisLog.xml
-C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\bin\Debug\OSWebCore.dll.lastcodeanalysissucceeded
