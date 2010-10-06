@@ -22,3 +22,13 @@ C:\Documents and Settings\rafaelf\Desktop\OSWebProject\OSWebCore\obj\Debug\Gener
 C:\Documents and Settings\rafaelf\Desktop\OSWebProject\OSWebCore\obj\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\rafaelf\Desktop\OSWebProject\OSWebCore\obj\Debug\OSWebCore.dll
 C:\Documents and Settings\rafaelf\Desktop\OSWebProject\OSWebCore\obj\Debug\OSWebCore.pdb
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\bin\Debug\OSWebCore.dll
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\bin\Debug\OSWebCore.pdb
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\obj\Debug\OSWebCore.Properties.Resources.resources
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\obj\Debug\OSWebCore.dll
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\obj\Debug\OSWebCore.pdb
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\bin\Debug\OSWebCore.dll.CodeAnalysisLog.xml
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebCore\bin\Debug\OSWebCore.dll.lastcodeanalysissucceeded

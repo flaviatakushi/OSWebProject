@@ -26,3 +26,13 @@ C:\Documents and Settings\rafaelf\Desktop\OSWebProject\OSWebSite\obj\Debug\Gener
 C:\Documents and Settings\rafaelf\Desktop\OSWebProject\OSWebSite\obj\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\rafaelf\Desktop\OSWebProject\OSWebSite\obj\Debug\OSWebSite.dll
 C:\Documents and Settings\rafaelf\Desktop\OSWebProject\OSWebSite\obj\Debug\OSWebSite.pdb
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebSite\bin\OSWebSite.dll
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebSite\bin\OSWebSite.pdb
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebSite\bin\OSWebCore.dll
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebSite\bin\OSWebCore.pdb
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebSite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebSite\obj\Debug\OSWebSite.Properties.Resources.resources
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebSite\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebSite\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebSite\obj\Debug\OSWebSite.dll
+C:\Users\Rafael\Desktop\OSWebProject\OSWebProject\OSWebSite\obj\Debug\OSWebSite.pdb

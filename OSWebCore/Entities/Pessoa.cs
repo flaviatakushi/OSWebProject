@@ -17,7 +17,7 @@ namespace OSWebCore
         private string cpfCnpj;
         private string rgIe;
         private long idPessoaTipo;
-        private DateTime? dtNascimento;
+        private DateTime dtNascimento;
         private byte sexo;
         private bool arquivado;
         private DateTime? dtArquivacao;
@@ -101,7 +101,7 @@ namespace OSWebCore
         }
 
         [EntityProperty(true)]
-        public DateTime? DtNascimento
+        public DateTime DtNascimento
         {
             get
             {
@@ -162,7 +162,7 @@ namespace OSWebCore
             rules.Add(new SimpleRule("NomeConhecido", "Campo 'Nome Conhecido' não pode exceder o limite de 80 caracteres.", () => { return this.nomeConhecido.Length <= 80; }));
             rules.Add(new SimpleRule("CpfCnpj", "Campo 'CPF / CNPJ' é inválido.", () => { return this.cpfCnpj == null || (ValidateCpf(this.cpfCnpj) || ValidateCnpj(this.cpfCnpj)); }));
             rules.Add(new SimpleRule("IdPessoaTipo", "Campo 'Tipo de Pessoa' é inválido.", () => { return this.idPessoaTipo > 0; }));
-            rules.Add(new SimpleRule("DtNascimento", "Campo 'Data de Nascimento' deve possuir uma data igual ou superior a 01/01/1900.", () => { return !this.dtNascimento.HasValue || this.dtNascimento.Value >= this.minDtValue; }));
+            rules.Add(new SimpleRule("DtNascimento", "Campo 'Data de Nascimento' deve possuir uma data igual ou superior a 01/01/1900.", () => { return this.dtNascimento >= this.minDtValue; }));
             rules.Add(new SimpleRule("Sexo", "Campo 'Sexo' é inválido.", () => { return this.sexo == 0 || this.sexo == 1; }));
             rules.Add(new SimpleRule("DtArquivacao", "Campo 'Data de Arquivação' deve possuir uma data igual ou superior a 01/01/1900.", () => { return !this.dtArquivacao.HasValue || this.dtArquivacao.Value >= this.minDtValue; }));
 

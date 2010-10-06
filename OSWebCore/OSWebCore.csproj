@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLayer\LoginBll.cs" />
-    <Compile Include="BusinessLayer\UsuarioBll.cs" />
-    <Compile Include="BusinessLayer\PessoaBll.cs" />
-    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="BusinessLayer\PedidoStatusBL.cs" />
+    <Compile Include="BusinessLayer\PedidoTipoBL.cs" />
+    <Compile Include="BusinessLayer\PermissaoBL.cs" />
+    <Compile Include="BusinessLayer\PessoaTipoBL.cs" />
+    <Compile Include="BusinessLayer\UsuarioBL.cs" />
+    <Compile Include="BusinessLayer\PessoaBL.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Contato.cs" />
     <Compile Include="Entities\ContatoTipo.cs" />
@@ -66,7 +68,7 @@
     <Compile Include="BusinessLayer\BaseBusinessLayer.cs" />
     <Compile Include="DataAccessLayer\DataAccess.cs" />
     <Compile Include="DataAccessLayer\DataAccessBuilder.cs" />
-    <Compile Include="ObjectModel\RulableObject.cs" />
+    <Compile Include="ObjectModel\BaseEntity.cs" />
     <Compile Include="ObjectModel\Rules\BaseRule.cs" />
     <Compile Include="ObjectModel\Rules\RegexRule.cs" />
     <Compile Include="ObjectModel\Rules\SimpleRule.cs" />
